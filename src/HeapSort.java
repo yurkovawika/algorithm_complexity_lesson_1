@@ -21,10 +21,8 @@ public class HeapSort {
 
     void heap(int[] array, int n, int i) {
         int root = i;
-        int l = 2 * i + 1; // левый = 2*i + 1
-        int r = 2 * i + 2; // правый = 2*i + 2
-
-
+        int l = 2 * i + 1; // левая ветвь
+        int r = 2 * i + 2; // правая
         if (l < n && array[l] > array[root])
             root = l;
 
